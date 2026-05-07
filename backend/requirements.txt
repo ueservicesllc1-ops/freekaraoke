@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+python-dotenv
+firebase-admin
+b2sdk
+pydantic
+requests
+python-multipart
+yt-dlp
