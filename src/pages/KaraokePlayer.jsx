@@ -296,7 +296,8 @@ const KaraokePlayer = () => {
 
       {/* Letras Ultra-Grandes con Deslizamiento Central */}
       <main className="flex-grow relative z-10 px-6 flex flex-col justify-center items-center overflow-hidden">
-        <div className="w-full max-w-7xl h-full flex flex-col justify-center py-20">
+        {/* Zona Segura: 70% del alto de la pantalla centrado para evitar solapamientos con header/footer */}
+        <div className="w-full max-w-7xl h-[70vh] flex flex-col justify-center py-4">
           {[-2, -1, 0, 1, 2].map((offset) => {
             const currentIdx = activeKaraoke.segmentIdx === -1 ? 0 : activeKaraoke.segmentIdx;
             const idx = currentIdx + offset;
